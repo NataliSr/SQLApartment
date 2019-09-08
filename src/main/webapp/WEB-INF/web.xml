@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+
+  <servlet>
+    <servlet-name>AddApartment</servlet-name>
+    <servlet-class>com.gmail.natali.servlets.AddApartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddApartment</servlet-name>
+    <url-pattern>/AddApartmentServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  <servlet-name>AllApartmentServlet</servlet-name>
+  <servlet-class>com.gmail.natali.servlets.GetAllApartmentServlet</servlet-class>
+</servlet>
+  <servlet-mapping>
+    <servlet-name>AllApartmentServlet</servlet-name>
+    <url-pattern>/ShowAllApartments</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DelApartment</servlet-name>
+    <servlet-class>com.gmail.natali.servlets.DelApartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelApartment</servlet-name>
+    <url-pattern>/DelApartmentServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FindByPrice</servlet-name>
+    <servlet-class>com.gmail.natali.servlets.FindbyPriceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindByPrice</servlet-name>
+    <url-pattern>/FindbyPriceServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+
