@@ -10,7 +10,7 @@ public class SQLApartmetDAOImplementation implements ApatmentDAO {
 
     private final String DB_CONNECTION = "jdbc:mysql://localhost:3306/apartment?serverTimezone=Europe/Kiev";
     private final String DB_USER = "root";
-    private final String DB_PASSWORD = "natalia123";
+    private final String DB_PASSWORD = "password";
 
     public SQLApartmetDAOImplementation() {
         try {
